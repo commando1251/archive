@@ -1,0 +1,32 @@
+{
+  "name": "commando1251/archive",
+  "description": "Simple and smart archive builder",
+  "type": "package",
+  "keywords": ["archive", "zip", "rar", "tar", "creator"],
+  "homepage": "https://github.com/commando1251/archive",
+  "license": "MIT",
+  "require": {
+    "php": "^7.1.3"
+  },
+  "authors": [
+    {
+      "name": "Andrey Dobrozhanskiy",
+      "email": "andrey.dobrozhanskiy@gmail.com",
+      "homepage": "https://candyteam.net"
+    }
+  ],
+  "minimum-stability": "stable",
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Commando1251\\Archive\\Laravel\\ArchiveServiceProvider"
+      ],
+      "aliases": {
+        "Archive": "Commando1251\\Archive\\Laravel\\Facades\\Archive"
+      }
+    }
+  },
+  "autoload": {
+    "psr-4": {"Commando1251\\Archive\\": "src/Archive"}
+  }
+}
